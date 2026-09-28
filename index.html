@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manikandan | Data Analyst Notebook</title>
+<meta name="description" content="Interactive data notebook portfolio of Manikandan, aspiring Data Analyst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Caveat:wght@600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="idx" aria-label="Notebook index"></nav>
+<div class="book" id="book"><div class="bar"><i id="prog"></i></div>
+
+<main>
+<section class="page" data-t="Intro" data-tr="fade" aria-label="Intro">
+  <p class="hand">Hi, I'm Manikandan.</p>
+  <h1>Aspiring Data Analyst</h1>
+  <p class="lead">I turn raw data into meaningful insights using SQL, Python and Power BI.</p>
+  <div class="btns"><button class="btn go" data-go="1">Explore My Notebook</button><button class="btn ghost" data-go="5">View Resume</button></div>
+  <div class="deco" aria-hidden="true">
+    <div class="note n1"><code>SELECT reason, COUNT(*)<br>FROM delays<br>GROUP BY reason;</code></div>
+    <div class="note n2 chart"><b style="--h:80%"></b><b style="--h:55%"></b><b style="--h:35%"></b><b style="--h:20%"></b></div>
+    <div class="note n3">Where? When? Why?<br><span class="hand">then: what to do?</span></div>
+  </div>
+</section>
+
+<section class="page" data-t="Journey" data-tr="slide" aria-label="My data journey">
+  <p class="hand">page 02</p><h2>My Data Journey</h2>
+  <ol class="tl" id="tl"></ol>
+</section>
+
+<section class="page" data-t="Skills" data-tr="flip" aria-label="Analytics toolkit">
+  <p class="hand">page 03</p><h2>My Analytics Toolkit</h2><p class="sub">Hover or focus a skill to see an example.</p>
+  <div class="tk"><div id="skills"></div><aside class="demo" id="demo" aria-live="polite"><span class="hand">example</span><pre id="demoTxt">Pick a skill.</pre><div class="mini" id="mini" aria-hidden="true"><b></b><b></b><b></b><b></b></div></aside></div>
+</section>
+
+<section class="page" data-t="Projects" data-tr="expand" aria-label="Project notebook">
+  <p class="hand">page 04</p><h2>My Projects</h2><p class="sub">Open a card to read the full story.</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section class="page" data-t="Thinking" data-tr="turn" aria-label="How I think with data">
+  <p class="hand">page 05</p><h2>How I Think With Data</h2><p class="sub">Select a step.</p>
+  <div class="flow" id="flow"></div><div class="explain" id="explain" aria-live="polite"></div>
+</section>
+
+<section class="page" data-t="Resume" data-tr="slide" aria-label="Resume">
+  <p class="hand">page 06</p><h2>Resume</h2>
+  <div class="paper">
+    <h3>Manikandan D</h3><p><b>Aspiring Data Analyst</b></p>
+    <p>Recent graduate with a foundation in SQL, PL/SQL, MongoDB, Python and Power BI. I clean data, explore it and present it in dashboards.</p>
+    <h4>Education</h4><p>B.Tech, Artificial Intelligence and Data Science, Mailam Engineering College, Aug 2022 to May 2026.</p>
+    <h4>Technical skills</h4><p>SQL, Oracle SQL, SQL*Plus, PL/SQL, MongoDB, Python, Pandas, NumPy, Matplotlib, Power BI, Jira, SDLC, STLC.</p>
+    <h4>Projects</h4><p>Logistics Delivery Performance and Delay Analysis Dashboard. Telecom Preventive Maintenance with Smart Analysis.</p>
+    <a class="btn go" href="assets/resume/Manikandan_Data_Analyst_Resume.pdf" download>Download Resume</a>
+  </div>
+</section>
+
+<section class="page" data-t="Contact" data-tr="turn" aria-label="Contact">
+  <p class="hand">last page</p><h2>Thanks for exploring my notebook.</h2><p class="lead">Let's connect.</p>
+  <div class="btns"><a class="btn go" href="mailto:manianalyst27@gmail.com">Email</a><a class="btn ghost" href="https://linkedin.com/in/md2227" target="_blank" rel="noopener">LinkedIn</a><a class="btn ghost" href="https://github.com/ManikandanD22" target="_blank" rel="noopener">GitHub</a><a class="btn ghost" href="assets/resume/Manikandan_Data_Analyst_Resume.pdf" download>Resume</a></div>
+  <p class="hand big">Open to entry-level Data Analytics opportunities.</p>
+</section>
+</main>
+
+<div class="ctl"><button class="btn ghost" id="prev">← Previous</button><span id="pos"></span><button class="btn go" id="next">Next →</button></div>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle" hidden>
+  <div class="sheetIn"><button class="btn ghost close" id="close">Close</button><h2 id="sTitle"></h2><p class="tools" id="sTools"></p><div id="sBody"></div></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
